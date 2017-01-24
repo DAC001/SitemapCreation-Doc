@@ -5,29 +5,7 @@
 1. Open Google Chrome and install the extension [Web Scraper Chrome Extension](https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn) 
 
 
-2. Create three sitemaps for each domain. Below are the three sitemaps to create
-  1. Creating sitemap of the input page(Where users inputs data to the page). This page can be anything where user inputs data submits the form.
-    1. Open the base domain page. Eg: Let us consider http://rent.com
-    2. Go to developer tools (F12) click on Web Scraper tab as shown in [this image](images/image1.PNG) 
-    3. Click on create new sitemap. Give sitemap a name and enter any url as it needs one as [shown here](images/image2.PNG). 
-    4. Click on add new selector and click select in selector section, click on the input element in the web page and click Done Selecting. [Shown here after done selecting](images/image3.PNG)
-    5. In id field give an id for the selector. This id should be in the follwing format.  
-      1. If it is an input text element then, id should be text-id1 or text-id2 or text-id3 .....
-      2. If it is a checkbox element then, id should be checkbox-id1 or checkbox-id2 ......
-      3. If it is a radiobutton element then, id should be radiobutton-id1 or radiobutton-id2 ......
-      4. If it is a submit button then, id should be submit-button
-      5. If it is a submit text i.e if you type in the text box and press enter key to submit the form then, id should be submit-text
-    6. After you finish creating selectors for all the elements[(Like this)](images/image4.PNG) you can proceed to the next step. 
-    7. Click on the Sitemap and click export sitemap as [shown here](images/image5.PNG)
-    8. Copy the entire sitemap json text as [shown here](images/image6.PNG) and paste it in a file. Name the file as rent-input.json
-  2. Creating sitemap of the listings page(has all the listings)
-    1. Open the base domain page. Eg: Let us consider http://rent.com and enter sensible data and go to the listings page. 
-    2. Go to developer tools (F12) click on Web Scraper tab as shown in [this image](images/image1.PNG) 
-    3. Click on create new sitemap. Give sitemap a name and enter any url as it needs one as [shown here](images/image7.PNG)
-    4. Click on add new selector, check the multiple checkbox as [shown here](images/image8.PNG), click selector in selector section and  select atleast 2-3 links of the listings then all the listings are automatically selected. Then, click on done selecting and give the selector an id. id should be "listings" as [shown here](images/image9.PNG) and save the selector. 
-    5. Again, click on add new selector, click select in selector section and select next page button in the pagination bar.Then, click on done selecting and give the selector an id. id should be "page" as [shown here](images/image91.png) and save the selector. 
-    6. Click on the Sitemap and click export sitemap as [shown here](images/image5.PNG)
-    7. Copy the entire sitemap json text as [shown here](images/image6.PNG) and paste it in a file. Name the file as rent-listings.json
+2. Create sitemap for each domain. Below are the three sitemaps to create
   3. Creating sitemap of the listing page(Has the content of one listing)
     1. Click on any listing and open the listing page to scrape. 
     2. Go to developer tools (F12) click on Web Scraper tab as shown in [this image](images/image1.PNG) 
